@@ -1,0 +1,139 @@
+{
+  "project_info": {
+    "project_number": "259256346598",
+    "firebase_url": "https://fut17-9ccaf.firebaseio.com",
+    "project_id": "fut17-9ccaf",
+    "storage_bucket": "fut17-9ccaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259256346598:android:fcd521cbbd3a4f64",
+        "android_client_info": {
+          "package_name": "com.prateek.trials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259256346598-trke4aekn4ja3o09tv7n0bg3dr9u4v66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prateek.trials",
+            "certificate_hash": "fa10a3e63b8f661495e9bf82f9adc29046524ae3"
+          }
+        },
+        {
+          "client_id": "259256346598-126n3d89h8hsgko4g3veujv3jm1k973m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eQzaN010cT2CvdMrtKqtrDGOYVg26KI"
+        },
+        {
+          "current_key": "AIzaSyBTJoDl0cJL4003pe-wgYYFxVrR6xkJfoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259256346598-126n3d89h8hsgko4g3veujv3jm1k973m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259256346598:android:84d9ec2197e767b9",
+        "android_client_info": {
+          "package_name": "com.prateek.fifa.fut17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259256346598-q83lehb3vkl3qf7j3f5iks73ilh4uos3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prateek.fifa.fut17",
+            "certificate_hash": "90f6a6c3523677889b8118d371563981f2033784"
+          }
+        },
+        {
+          "client_id": "259256346598-126n3d89h8hsgko4g3veujv3jm1k973m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eQzaN010cT2CvdMrtKqtrDGOYVg26KI"
+        },
+        {
+          "current_key": "AIzaSyBTJoDl0cJL4003pe-wgYYFxVrR6xkJfoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259256346598-126n3d89h8hsgko4g3veujv3jm1k973m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259256346598:android:4e72a8f920647a9e",
+        "android_client_info": {
+          "package_name": "com.prateek.fut17packopener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259256346598-126n3d89h8hsgko4g3veujv3jm1k973m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eQzaN010cT2CvdMrtKqtrDGOYVg26KI"
+        },
+        {
+          "current_key": "AIzaSyBTJoDl0cJL4003pe-wgYYFxVrR6xkJfoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

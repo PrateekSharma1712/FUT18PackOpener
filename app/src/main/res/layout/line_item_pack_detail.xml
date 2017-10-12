@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="player"
+            type="com.prateek.fut17packopener.models.PackOpenerPlayer" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="@dimen/li_card_width"
+        android:layout_height="@dimen/li_card_height"
+        android:background="@drawable/legend">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/li_card_top_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    tools:text="91"
+                    android:text="@{String.valueOf(player.rating)}"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/li_card_text_bigger"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    tools:text="LW"
+                    android:text="@{player.position}"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/li_card_text_smaller" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/nationFlag"
+                    android:layout_width="@dimen/li_nation_image_width"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="2dp"
+                    tools:src="@mipmap/ic_launcher" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/clubFlag"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="@dimen/li_nation_image_width"
+                    android:layout_height="@dimen/li_nation_image_height"
+                    tools:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:paddingRight="4dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/playerImage"
+                    android:layout_width="@dimen/li_card_player_image_width"
+                    android:layout_height="@dimen/li_card_player_image_height"
+                    app:placeholderImage="@drawable/ic_person"
+                    app:placeholderImageScaleType="fitXY"
+                    tools:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/top"
+            android:gravity="center"
+            tools:text="PLAYER NAME"
+            android:text="@{player.name}"
+            android:textAllCaps="true"
+            android:textSize="@dimen/li_card_text_smaller" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/playerName"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.pace)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pacLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="PAC"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.shot)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/shoLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="SHO"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.pass)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pasLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="PAS"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.dribble)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/driLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="DRI"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/def"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.defend)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/defLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="DEF"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="91"
+                        android:text="@{String.valueOf(player.physical)}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/phyLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="PHY"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/li_card_text_smallest" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>
+

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.prateek.fut17packopener"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':BaseGameUtils')
+    compile('com.google.android:flexbox:0.2.7') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.firebase:firebase-database:11.0.2'
+    compile 'com.google.firebase:firebase-ads:11.0.2'
+    compile 'com.google.android.gms:play-services:11.0.2'
+    compile 'com.wajahatkarim3.EasyFlipView:EasyFlipView:1.0.2'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.facebook.fresco:fresco:1.5.0'
+    compile 'com.github.jinatonic.confetti:confetti:1.1.0'
+    compile 'com.allattentionhere:fabulousfilter:0.0.4'
+    compile 'com.android.support:design:26.+'
+    compile 'com.bignerdranch.android:simple-item-decoration:1.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'ru.bullyboo.animation:text_counter:1.0.2'
+    testCompile 'junit:junit:4.12'
+    provided 'org.projectlombok:lombok:1.16.12'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+}
+apply plugin: 'com.google.gms.google-services'

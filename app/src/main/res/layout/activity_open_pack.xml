@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_spikes"
+    android:id="@+id/container"
+    tools:context="com.prateek.fut17packopener.ui.OpenPackActivity">
+
+    <TextView
+        android:id="@+id/tapForPackOpening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_open"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/rotateView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/rotateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipOnTouch="false">
+
+        <com.prateek.fut17packopener.PlayerCardView
+            android:id="@+id/playerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/packCard"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:translationZ="2dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:id="@+id/packCardImage"
+                android:src="@drawable/tots_pack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</RelativeLayout>

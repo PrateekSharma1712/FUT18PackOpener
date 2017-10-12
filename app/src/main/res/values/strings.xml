@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FUT 17 Pack Opener</string>
+    <string name="players">PLAYERS</string>
+    <string name="total_players">TOTAL PLAYERS</string>
+    <string name="tap_for_pack_details">Tap on Card for Pack Details</string>
+    <string name="tap_to_open">Tap on card to Open %s</string>
+    <string name="default_pack">FREE Pack</string>
+    <string name="tots_pack_title">TOTS Pack</string>
+    <string name="mega_pack_title">Mega Pack</string>
+    <string name="totw_pack_title">TOTW Pack</string>
+    <string name="prime_players_pack_title">Prime Players Pack</string>
+    <string name="premium_players_pack_title">Premium Players Pack</string>
+    <string name="rare_players_pack_title">Rare Players Pack</string>
+    <string name="sign_in_failure">Unable to sign in</string>
+
+    <string name="app_id">259256346598</string>
+    <string name="achievement_open_pack">CgkI5s-H58UHEAIQAg</string>
+    <string name="achievement_tots_pack">CgkI5s-H58UHEAIQAQ</string>
+    <string name="achievement_mega_pack">CgkI5s-H58UHEAIQBw</string>
+    <string name="achievement_totw_pack">CgkI5s-H58UHEAIQBg</string>
+    <string name="achievement_prime_players_pack">CgkI5s-H58UHEAIQCA</string>
+    <string name="achievement_premium_players_pack">CgkI5s-H58UHEAIQCQ</string>
+    <string name="achievement_rare_players_pack">CgkI5s-H58UHEAIQCg</string>
+    <string name="achievement_sell_player">CgkI5s-H58UHEAIQAw</string>
+
+    <string name="leaderboard_best_pack">CgkI5s-H58UHEAIQBA</string>
+    <string name="leaderboard_total_pack_value">CgkI5s-H58UHEAIQBQ</string>
+</resources>

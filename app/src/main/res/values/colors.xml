@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#cc000000</color>
+    <color name="colorAccent">#ded7d7</color>
+
+    <color name="gold_dark">#946335</color>
+    <color name="gold_med">#ab804b</color>
+    <color name="gold_light">#edd3b2</color>
+
+    <color name="gold">#ffeb7e</color>
+    <color name="blue">#003482</color>
+    <color name="dark_gold">#f5db66</color>
+    <color name="legend">#6c4b17</color>
+    <color name="ones_to_watch">#999da3</color>
+    <color name="ones_to_watch_name">#c7cfdb</color>
+    <color name="halloween">#d36c12</color>
+    <color name="movember_name">#3c2313</color>
+    <color name="movember">#aea590</color>
+    <color name="award_winner_name">#591b82</color>
+    <color name="gotm">#1a1381</color>
+    <color name="stpatrick">#1B6B34</color>
+    <color name="stpatrick_name">#218540</color>
+    <color name="stpatrick_rating">#104921</color>
+    <color name="fut_birthday">#145c9c</color>
+    <color name="futties">#e575a0</color>
+    <color name="sbc_base">#f5f5f5</color>
+    <color name="sbc_base_bottom">#d7d7d7</color>
+    <color name="button_pressed">#55000000</color>
+    <color name="button_bg">#99000000</color>
+
+    <color name="filters_buttons">#ff4081</color>
+    <color name="filters_buttons_selected">#c2185b</color>
+    <color name="filters_chips">#b3e5fc</color>
+</resources>

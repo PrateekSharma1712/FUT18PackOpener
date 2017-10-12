@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_spikes"
+        android:animateLayoutChanges="true"
+        tools:context="com.prateek.fut17packopener.ui.LandingActivity">
+
+
+        <TextView
+            android:id="@+id/coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_coins"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="COINS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coins"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/openPack"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:background="@drawable/button_press_selector">
+
+                <TextView
+                    android:id="@+id/tv_OpenPack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="Open Pack"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_allPlayers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_OpenPack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    tools:text="@string/total_players"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/menu_item_sub_heading_text_size"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/totalPlayersLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_OpenPack"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/playerDownloading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myCards"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_press_selector" >
+
+                <TextView
+                    android:id="@+id/tv_MyCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="My Cards"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+                <ProgressBar
+                    android:id="@+id/myCardsLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_MyCards"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_MyCardPlayers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_MyCards"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    tools:text="@string/players"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/menu_item_sub_heading_text_size"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myDuplicateCards"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_press_selector">
+
+                <TextView
+                    android:id="@+id/tv_MyDuplicateCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="My Duplicate Cards"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+                <ProgressBar
+                    android:id="@+id/myDuplicateCardsLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_MyDuplicateCards"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_MyDuplicateCardPlayers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_MyDuplicateCards"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    tools:text="@string/players"
+                    android:textSize="@dimen/menu_item_sub_heading_text_size"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/store"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_press_selector" >
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Store"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/squadBuilder"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/button_press_selector" >
+
+                <TextView
+                    android:id="@+id/tv_squadBuilder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Squad Builder"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/achievements"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/button_press_selector" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/games_achievements_white"/>
+
+                <TextView
+                    android:id="@+id/tv_achievements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Achievements"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/leaderBoard"
+                android:layout_width="@dimen/menu_item_width"
+                android:layout_height="@dimen/menu_item_height"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/button_press_selector" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/games_leaderboards_white"/>
+
+                <TextView
+                    android:id="@+id/tv_leaderBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="LeaderBoard"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/menu_item_heading_text_size" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
